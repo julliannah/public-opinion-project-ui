@@ -1,22 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import testData from './TestData.json';
+import 'survey-react/survey.css';
+import { Survey } from 'survey-react-ui';
 
 function App() {
+  
+  const [isComplete, setComplete] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Questions</p>
+        <main>
+          {
+            !isComplete ? (
+              <Survey 
+                json={testData}
+                showCompletePage={false}
+                onComplete={setComplete}
+              />
+            ) : null
+          }
+        </main>
       </header>
     </div>
   );
