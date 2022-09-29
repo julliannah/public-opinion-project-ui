@@ -1,28 +1,15 @@
-import { useState } from 'react';
-import './App.css';
-import testData from './TestData.json';
 import 'survey-react/survey.css';
-import { Survey } from 'survey-react-ui';
+import './App.css';
+import { StylesManager } from "survey-core";
 
+import SurveyPage from './pages/SurveyPage';
+
+StylesManager.applyTheme("defaultV2");
 function App() {
-  
-  const [isComplete, setComplete] = useState(false);
-
   return (
     <div className="App">
       <header className="App-header">
-        <p>Questions</p>
-        <main>
-          {
-            !isComplete ? (
-              <Survey 
-                json={testData}
-                showCompletePage={false}
-                onComplete={setComplete}
-              />
-            ) : null
-          }
-        </main>
+        <SurveyPage />
       </header>
     </div>
   );
