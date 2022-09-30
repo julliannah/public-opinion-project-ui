@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
-.sv_main {
+* {
   font-family: 'Archivo', sans-serif;
+  font-size: 1rem;
+}
+.sv-action-bar {
+  margin-top: 1rem;
+}
+.sv_progress_bar {
+  margin-bottom: .5rem;
 }
 .App-header {
   background-color: rgb(238, 238, 238);

@@ -3,29 +3,9 @@ const questionData = {
   pages: [
     {
       elements: [{
-          name: "satisfaction-score",
-          title: "How would you describe your experience with our product?",
-          type: "radiogroup",
-          choices: [
-              { value: 5, text: "Fully satisfying" },
-              { value: 4, text: "Generally satisfying" },
-              { value: 3, text: "Neutral" },
-              { value: 2, text: "Rather unsatisfying" },
-              { value: 1, text: "Not satisfying at all" }
-          ],
-      }]
-    }, 
-    {
-      elements: [{
           name: "what-would-make-you-more-satisfied",
           title: "What can we do to make your experience more satisfying?",
           type: "comment",
-      }, {
-          name: "nps-score",
-          title: "On a scale of zero to ten, how likely are you to recommend our product to a friend or colleague?",
-          type: "rating",
-          rateMin: 0,
-          rateMax: 10
       }],
     }, 
     {
