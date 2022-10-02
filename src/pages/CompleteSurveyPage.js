@@ -1,8 +1,8 @@
 
 export default function CompleteSurveyPage() {
   return (
-    <div>
-      
-    </div>
+    <p className="complete-message">
+      Thank you for your information.
+    </p>
   )
 }
