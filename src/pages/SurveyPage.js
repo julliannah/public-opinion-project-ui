@@ -1,22 +1,24 @@
 // import { useState } from 'react';
-import questions from '../services/SurveyQuestions';
-import { Survey } from 'survey-react';
-import { useState } from 'react';
+import questions from "../services/SurveyQuestions";
+import { Survey } from "survey-react";
+import { useState } from "react";
+import uploadSurvey from "../services/SurveyServices";
 
 export default function SurveyPage() {
   const [answer, setAnswer] = useState({});
-  console.log(answer)
+
+  const handleSubmittingSurvey = (data) => {
+    uploadSurvey(data["disappointing-experience"]);
+  };
 
   return (
-    <Survey 
+    <Survey
       json={questions}
       showCompletedPage={false}
-      onComplete={ 
-        data => {
-          console.log(data.valuesHash)
-          setAnswer(data.valuesHash)
-        }
-      }
+      onComplete={(data) => {
+        handleSubmittingSurvey(data.valuesHash);
+        setAnswer(data.valuesHash);
+      }}
     />
   );
 }
