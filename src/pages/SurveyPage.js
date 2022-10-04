@@ -8,7 +8,12 @@ export default function SurveyPage() {
   const [answer, setAnswer] = useState({});
 
   const handleSubmittingSurvey = (data) => {
-    uploadSurvey(data["disappointing-experience"]);
+    uploadSurvey(data["disappointing-experience"], "disappointing-experience");
+    uploadSurvey(
+      data["what-would-make-you-more-satisfied"],
+      "what-would-make-you-more-satisfied"
+    );
+    uploadSurvey(data["how-can-we-improve"], "how-can-we-improve");
   };
 
   return (
