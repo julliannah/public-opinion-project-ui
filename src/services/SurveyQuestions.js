@@ -1,6 +1,6 @@
 const questions = {
-  "title": "Survey Title",
-  "description": "Here is the Survey Description.",
+  title: "Survey Title",
+  description: "Here is the Survey Description.",
   elements: [
     {
       name: "what-would-make-you-more-satisfied",
@@ -10,18 +10,14 @@ const questions = {
     {
       name: "how-can-we-improve",
       title: "In your opinion, how could we improve our product?",
-      type: "comment"
+      type: "comment",
     },
     {
       name: "disappointing-experience",
-      title: "Please let us know why you had such a disappointing experience with our product",
-      type: "comment"
+      title:
+        "Please let us know why you had such a disappointing experience with our product",
+      type: "comment",
     },
-    {
-      name: "how-can-we-improve",
-      title: "In your opinion, how could we improve our product?",
-      type: "comment"
-    },
-  ]
-}
-export default questions
+  ],
+};
+export default questions;
