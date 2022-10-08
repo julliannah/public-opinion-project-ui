@@ -6,14 +6,12 @@ import uploadSurvey from "../services/SurveyServices";
 
 export default function SurveyPage() {
   const [answer, setAnswer] = useState({});
+  const [product, setProduct] = useState("Samsung Galaxy S5");
 
   const handleSubmittingSurvey = (data) => {
-    uploadSurvey(data["disappointing-experience"], "disappointing-experience");
-    uploadSurvey(
-      data["what-would-make-you-more-satisfied"],
-      "what-would-make-you-more-satisfied"
-    );
-    uploadSurvey(data["how-can-we-improve"], "how-can-we-improve");
+    Object.keys(data).forEach(function (key) {
+      uploadSurvey(data[key], key, product);
+    });
   };
 
   return (
