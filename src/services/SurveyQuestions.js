@@ -1,6 +1,4 @@
 const questions = {
-  title: "Survey Title",
-  description: "Here is the Survey Description.",
   elements: [
     {
       name: "What can we do to make your experience more satisfying?",
