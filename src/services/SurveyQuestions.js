@@ -1,19 +1,30 @@
 const questions = {
   elements: [
     {
-      name: "What can we do to make your experience more satisfying?",
-      title: "What can we do to make your experience more satisfying?",
+      name: "Tên",
+      title: "Tên",
+      type: "text",
+    },
+    {
+      name: "Ngày, tháng, năm sinh",
+      title: "Ngày, tháng, năm sinh",
+      type: "text",
+      inputType: "date",
+      startWithNewLine: "false"
+    },
+    {
+      name: "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
+      title: "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
       type: "comment",
     },
     {
-      name: "In your opinion, how could we improve our product?",
-      title: "In your opinion, how could we improve our product?",
+      name: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
+      title: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
       type: "comment",
     },
     {
-      name: "Please let us know why you had such a disappointing experience with our produc",
-      title:
-        "Please let us know why you had such a disappointing experience with our product",
+      name: "Hãy cho chúng tôi biết điều gì làm bạn thất vọng ở sản phẩm này.",
+      title: "Hãy cho chúng tôi biết điều gì làm bạn thất vọng ở sản phẩm này.",
       type: "comment",
     },
   ],

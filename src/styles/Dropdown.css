@@ -1,3 +1,6 @@
+.dropdown {
+  margin: 0 2rem;
+}
 #dropdown-basic-button {
   cursor: pointer;
   margin: 1rem;

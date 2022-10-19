@@ -28,7 +28,7 @@ export default function SurveyPage() {
           }}
           id="dropdown-basic-button"
         >
-          {product !== "None" ? product : "Product"}
+          {product !== "None" ? product : "Sản Phẩm"}
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <Dropdown.Item className="dropdown-item" eventKey="Galaxy Note 22 Ultra">Galaxy Note 22 Ultra</Dropdown.Item>
