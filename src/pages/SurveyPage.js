@@ -2,15 +2,16 @@ import questions from "../services/SurveyQuestions";
 import { Survey } from "survey-react";
 import { useState } from "react";
 import uploadSurvey from "../services/SurveyServices";
-import { Dropdown } from 'react-bootstrap';
+import { Dropdown } from "react-bootstrap";
 
 export default function SurveyPage() {
   const [answer, setAnswer] = useState({});
   const [product, setProduct] = useState("None");
 
   const handleSubmittingSurvey = (data) => {
+    const name = data["Tên"];
     Object.keys(data).forEach(function (key) {
-      uploadSurvey(data[key], key, product);
+      uploadSurvey(data[key], name, key, product);
     });
   };
 
@@ -21,7 +22,7 @@ export default function SurveyPage() {
   return (
     <div className="main">
       <Dropdown onSelect={handleProductSelect}>
-        <Dropdown.Toggle 
+        <Dropdown.Toggle
           style={{
             minWidth: "100% !important",
             textAlign: "right",
@@ -31,9 +32,18 @@ export default function SurveyPage() {
           {product !== "None" ? product : "Sản Phẩm"}
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item className="dropdown-item" eventKey="Galaxy Note 22 Ultra">Galaxy Note 22 Ultra</Dropdown.Item>
-          <Dropdown.Item className="dropdown-item" eventKey="Galaxy Z Fold4">Galaxy Z Fold4</Dropdown.Item>
-          <Dropdown.Item className="dropdown-item" eventKey="Galaxy Buds2 Pro">Galaxy Buds2 Pro</Dropdown.Item>
+          <Dropdown.Item
+            className="dropdown-item"
+            eventKey="Galaxy Note 22 Ultra"
+          >
+            Galaxy Note 22 Ultra
+          </Dropdown.Item>
+          <Dropdown.Item className="dropdown-item" eventKey="Galaxy Z Fold4">
+            Galaxy Z Fold4
+          </Dropdown.Item>
+          <Dropdown.Item className="dropdown-item" eventKey="Galaxy Buds2 Pro">
+            Galaxy Buds2 Pro
+          </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       <Survey
