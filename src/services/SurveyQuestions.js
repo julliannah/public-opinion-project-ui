@@ -1,5 +1,20 @@
 const questions = {
+  title: "Public Opinion Survey",
   elements: [
+    {
+      type: "dropdown",
+      name: "Sản phẩm",
+      title: "Xin chọn sản phẩm để đánh giá",
+      isRequired: "true",
+      colCount: "0",
+      showNoneItem: "true",
+      choices: [
+        "Galaxy Note 22 Ultra",
+        "Galaxy Z Fold4",
+        "Galaxy Buds2 Pro",
+      ],
+      placeholder: "Sản phẩm"
+    },
     {
       name: "Tên",
       title: "Tên",
