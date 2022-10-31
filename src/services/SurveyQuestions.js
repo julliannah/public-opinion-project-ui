@@ -21,10 +21,16 @@ const questions = {
       type: "text",
     },
     {
-      name: "Ngày, tháng, năm sinh",
+      name: "DOB",
       title: "Ngày, tháng, năm sinh",
       type: "text",
       inputType: "date",
+      startWithNewLine: "false"
+    },
+    {
+      name: "Trường",
+      title: "Trường",
+      type: "text",
       startWithNewLine: "false"
     },
     {

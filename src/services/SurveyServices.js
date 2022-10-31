@@ -8,13 +8,13 @@ let axiosConfig = {
   },
 };
 
-const uploadSurvey = (data, name = "", topic, product) => {
+const uploadSurvey = (data, name = "", topic, product, school) => {
   const body = {
     content: data,
     full_name: name,
     topics: product,
     title: topic,
-    sub_sections: "",
+    sub_sections: school,
   };
 
   const post_request = axios.post(UPLOAD_SURVEY_URL, body, axiosConfig);
