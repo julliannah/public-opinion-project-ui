@@ -11,9 +11,15 @@ export default function SurveyPage() {
       dob: data["DOB"],
       school: data["Trường"]
     }
+    var temp = new Date(data["DOB"]);
+    console.log(temp)
+    temp.toUTCString();
+    var converted_dob = Math.floor(temp.getTime() / 1000);
+    console.log(converted_dob)
+    
     Object.keys(data).forEach(function (key) {
       if (data[key] !== question.name && data[key] !== question.product && data[key] !== question.dob && data[key] !== question.school) {
-        uploadSurvey(data[key], question.name, key, question.product, question.school);
+        uploadSurvey(data[key], question.name, converted_dob, key, question.product, question.school);
       }
     });
   };
