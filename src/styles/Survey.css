@@ -15,7 +15,8 @@
 .sv-action__content {
   font-size: 1.25rem;
 }
-.sv_main input[type=button], .sv_main button {
+.sv_main input[type="button"],
+.sv_main button {
   border-radius: 5px;
   font-weight: normal;
   font-size: 18px;
