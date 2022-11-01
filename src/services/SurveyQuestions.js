@@ -8,12 +8,8 @@ const questions = {
       isRequired: "true",
       colCount: "0",
       showNoneItem: "true",
-      choices: [
-        "Galaxy Note 22 Ultra",
-        "Galaxy Z Fold4",
-        "Galaxy Buds2 Pro",
-      ],
-      placeholder: "Sản phẩm"
+      choices: ["Galaxy Note 22 Ultra", "Galaxy Z Fold4", "Galaxy Buds2 Pro"],
+      placeholder: "Sản phẩm",
     },
     {
       name: "Tên",
@@ -25,22 +21,24 @@ const questions = {
       title: "Ngày, tháng, năm sinh",
       type: "text",
       inputType: "date",
-      startWithNewLine: "false"
+      startWithNewLine: "false",
     },
     {
       name: "Trường",
       title: "Trường",
       type: "text",
-      startWithNewLine: "false"
+      startWithNewLine: "false",
     },
     {
       name: "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
-      title: "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
+      title:
+        "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
       type: "comment",
     },
     {
       name: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
-      title: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
+      title:
+        "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
       type: "comment",
     },
     {

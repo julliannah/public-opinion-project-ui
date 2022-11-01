@@ -8,10 +8,11 @@ let axiosConfig = {
   },
 };
 
-const uploadSurvey = (data, name = "", topic, product, school) => {
+const uploadSurvey = (data, name = "", dob, topic, product, school) => {
   const body = {
     content: data,
     full_name: name,
+    dob: dob,
     topics: product,
     title: topic,
     sub_sections: school,
