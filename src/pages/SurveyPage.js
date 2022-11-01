@@ -21,7 +21,7 @@ export default function SurveyPage() {
         var convert = question.dob;
         convert = convert.split("-");
         var convertDob = new Date(convert[0], convert[1] - 1, convert[2]);
-        var dob = convertDob.getTime();
+        var dob = convertDob.getTime() / 1000;
 
         var response = uploadSurvey(
           data[key],
