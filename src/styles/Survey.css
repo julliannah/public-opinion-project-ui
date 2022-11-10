@@ -1,10 +1,31 @@
 .sv_main {
-  background-color: rgb(238, 238, 238);
+  background-color: #000154;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   padding: 0;
+}
+form {
+  background-color: #000154;
+}
+.main {
+  background-color: #000154;
+}
+.sv_custom_header {
+  background-color: #000154 !important;
+}
+.sv_header__text > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sv_header__text > h3 > span {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 .sv-action-bar {
   margin-top: 1rem;
@@ -21,15 +42,16 @@
   font-weight: normal;
   font-size: 18px;
   transition: all 0.3s;
+  background-color: #000154;
 }
-.complete-message {
-  position: absolute;
-  margin: auto;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #1ab394;
+.sv_main input[type="button"]:hover,
+.sv_main button:hover {
+  background-color: #00011b;
+}
+.sv_main .sv_select_wrapper:before {
+  background-color: #000154;
+}
+.sv_main .sv_body.sv_completed_page {
+  font-size: 2rem;
+  color: #000154;
 }

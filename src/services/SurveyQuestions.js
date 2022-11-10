@@ -1,5 +1,5 @@
 const questions = {
-  title: "Public Opinion Survey",
+  title: "Khảo sát",
   elements: [
     {
       type: "dropdown",
@@ -8,17 +8,19 @@ const questions = {
       isRequired: "true",
       colCount: "0",
       showNoneItem: "true",
-      choices: ["Galaxy Note 22 Ultra", "Galaxy Z Fold4", "Galaxy Buds2 Pro"],
+      choices: ["Galaxy S22 Ultra", "Galaxy Z Fold4", "Galaxy Buds2 Pro"],
       placeholder: "Sản phẩm",
     },
     {
       name: "Tên",
       title: "Tên",
+      isRequired: "true",
       type: "text",
     },
     {
       name: "DOB",
       title: "Ngày, tháng, năm sinh",
+      isRequired: "true",
       type: "text",
       inputType: "date",
       startWithNewLine: "false",

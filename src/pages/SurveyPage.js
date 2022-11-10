@@ -1,9 +1,10 @@
 import questions from "../services/SurveyQuestions";
 import { Survey } from "survey-react";
 import uploadSurvey from "../services/SurveyServices";
-import { upload } from "@testing-library/user-event/dist/upload";
+import { useState } from "react";
 
 export default function SurveyPage() {
+  const [isSubmit, setSubmit] = useState(false);
   const handleSubmittingSurvey = (data) => {
     const question = {
       name: data["Tên"],
@@ -37,13 +38,21 @@ export default function SurveyPage() {
     });
   };
 
+  const refreshPage = () => {
+    window.location.reload();
+  } 
+
   return (
     <div className="main">
+      { isSubmit ? <button id="back-to-survey" onClick={refreshPage}>Trở về trang khảo sát</button> : <></> }
       <Survey
         json={questions}
         showCompletedPage={true}
+        completeText="Hoàn thành"
+        completedHtml= "Cảm ơn bạn đã tham gia khảo sát."
         onComplete={(data) => {
           handleSubmittingSurvey(data.valuesHash);
+          setSubmit(true)
         }}
       />
     </div>
