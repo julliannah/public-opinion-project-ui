@@ -35,17 +35,37 @@ const questions = {
       name: "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
       title:
         "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
+      isRequired: "true",
+      validators: [
+        {
+          "type": "text",
+          "minLength": 5
+        }
+      ],
       type: "comment",
     },
     {
       name: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
-      title:
-        "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
+      title: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
+      isRequired: "true",
+      validators: [
+        {
+          "type": "text",
+          "minLength": 5
+        }
+      ],
       type: "comment",
     },
     {
       name: "Hãy cho chúng tôi biết điều gì làm bạn thất vọng ở sản phẩm này.",
       title: "Hãy cho chúng tôi biết điều gì làm bạn thất vọng ở sản phẩm này.",
+      isRequired: "true",
+      validators: [
+        {
+          "type": "text",
+          "minLength": 5
+        }
+      ],
       type: "comment",
     },
   ],
