@@ -49,7 +49,7 @@ export default function SurveyPage() {
         json={questions}
         showCompletedPage={true}
         completeText="Hoàn thành"
-        completedHtml= "Cảm ơn bạn đã tham gia khảo sát."
+        completedHtml="Cảm ơn bạn đã tham gia khảo sát."
         onComplete={(data) => {
           handleSubmittingSurvey(data.valuesHash);
           setSubmit(true)

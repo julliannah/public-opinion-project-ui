@@ -6,6 +6,7 @@ const questions = {
       name: "Sản phẩm",
       title: "Xin chọn sản phẩm để đánh giá",
       isRequired: "true",
+      requiredErrorText: "Bắt buộc", 
       colCount: "0",
       showNoneItem: "true",
       choices: ["Galaxy S22 Ultra", "Galaxy Z Fold4", "Galaxy Buds2 Pro"],
@@ -15,12 +16,14 @@ const questions = {
       name: "Tên",
       title: "Tên",
       isRequired: "true",
+      requiredErrorText: "Bắt buộc", 
       type: "text",
     },
     {
       name: "DOB",
       title: "Ngày, tháng, năm sinh",
       isRequired: "true",
+      requiredErrorText: "Bắt buộc", 
       type: "text",
       inputType: "date",
       startWithNewLine: "false",
@@ -36,11 +39,12 @@ const questions = {
       title:
         "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
       isRequired: "true",
+      requiredErrorText: "Bắt buộc",
       validators: [
         {
-          "type": "text",
-          "minLength": 10,
-          "text": "Xin nhập ít nhất 10 kí tự",          
+          type: "regex",
+          text: "Nhập ít nhất 3 từ",  
+          regex: /(?=([^ ]* ){2})(?=( [^ ])+.)/     
         }
       ],
       type: "comment",
@@ -49,11 +53,12 @@ const questions = {
       name: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
       title: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
       isRequired: "true",
+      requiredErrorText: "Bắt buộc",
       validators: [
         {
-          "type": "text",
-          "minLength": 10,
-          "text": "Xin nhập ít nhất 10 kí tự",          
+          type: "regex",
+          text: "Nhập ít nhất 3 từ",  
+          regex: /(?=([^ ]* ){2})(?=( [^ ])+.)/     
         }
       ],
       type: "comment",
@@ -62,11 +67,12 @@ const questions = {
       name: "Hãy cho chúng tôi biết điều gì làm bạn thất vọng ở sản phẩm này.",
       title: "Hãy cho chúng tôi biết điều gì làm bạn thất vọng ở sản phẩm này.",
       isRequired: "true",
+      requiredErrorText: "Bắt buộc",
       validators: [
         {
-          "type": "text",
-          "minLength": 10,
-          "text": "Xin nhập ít nhất 10 kí tự",          
+          type: "regex",
+          text: "Nhập ít nhất 3 từ",  
+          regex: /(?=([^ ]* ){2})(?=( [^ ])+.)/     
         }
       ],
       type: "comment",
