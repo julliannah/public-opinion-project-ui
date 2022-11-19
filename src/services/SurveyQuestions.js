@@ -39,7 +39,8 @@ const questions = {
       validators: [
         {
           "type": "text",
-          "minLength": 5
+          "minLength": 10,
+          "text": "Xin nhập ít nhất 10 kí tự",          
         }
       ],
       type: "comment",
@@ -51,7 +52,8 @@ const questions = {
       validators: [
         {
           "type": "text",
-          "minLength": 5
+          "minLength": 10,
+          "text": "Xin nhập ít nhất 10 kí tự",          
         }
       ],
       type: "comment",
@@ -63,7 +65,8 @@ const questions = {
       validators: [
         {
           "type": "text",
-          "minLength": 5
+          "minLength": 10,
+          "text": "Xin nhập ít nhất 10 kí tự",          
         }
       ],
       type: "comment",
