@@ -6,10 +6,8 @@ const questions = {
       name: "Sản phẩm",
       title: "Xin chọn sản phẩm để đánh giá",
       isRequired: "true",
-      requiredErrorText: "Bắt buộc", 
-      colCount: "0",
-      showNoneItem: "true",
-      choices: ["Galaxy S22 Ultra", "Galaxy Z Fold4", "Galaxy Buds2 Pro"],
+      requiredErrorText: "Bắt buộc",
+      choices: ["A73", "S22 Ultra", "Z Fold4", "Z Flip4", "Buds2 Pro", "Watch5 Pro"],
       placeholder: "Sản phẩm",
     },
     {
@@ -35,9 +33,9 @@ const questions = {
       startWithNewLine: "false",
     },
     {
-      name: "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
+      name: "Ý kiến của bạn về ngoại hình và tính tương tác của sản phẩm?",
       title:
-        "Chúng tôi có thể làm gì để giúp bạn hài lòng hơn với trải nghiệm của mình?",
+        "Ý kiến của bạn về ngoại hình và tính tương tác của sản phẩm?",
       isRequired: "true",
       requiredErrorText: "Bắt buộc",
       validators: [
@@ -50,8 +48,8 @@ const questions = {
       type: "comment",
     },
     {
-      name: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
-      title: "Theo quan điểm cá nhân của bạn, làm thế nào để chúng tôi có thể cải thiện sản phẩm này?",
+      name: "Hãy cho chúng tôi biết điều gì làm bạn chưa hài lòng với sản phẩm?",
+      title: "Hãy cho chúng tôi biết điều gì làm bạn chưa hài lòng với sản phẩm?",
       isRequired: "true",
       requiredErrorText: "Bắt buộc",
       validators: [
@@ -64,8 +62,8 @@ const questions = {
       type: "comment",
     },
     {
-      name: "Hãy cho chúng tôi biết điều gì làm bạn thất vọng ở sản phẩm này.",
-      title: "Hãy cho chúng tôi biết điều gì làm bạn thất vọng ở sản phẩm này.",
+      name: "Theo quan điểm của bạn, chúng tôi có thể cải thiện sản phẩm này bằng cách nào?",
+      title: "Theo quan điểm của bạn, chúng tôi có thể cải thiện sản phẩm này bằng cách nào?",
       isRequired: "true",
       requiredErrorText: "Bắt buộc",
       validators: [

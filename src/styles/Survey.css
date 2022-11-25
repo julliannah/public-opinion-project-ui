@@ -6,6 +6,12 @@
   font-size: calc(10px + 2vmin);
   padding: 0;
 }
+.sv_main .sv_body {
+  border-top: none;
+}
+.sv_container {
+  color: #000154;
+}
 form {
   background-color: #000154;
 }

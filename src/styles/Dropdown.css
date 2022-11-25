@@ -13,14 +13,29 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+.sv_main .sv_q_dropdown__filter-string-input {
+  border: none;
+}
 .sv_main
   input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"]):not([type="checkbox"]):not([type="radio"]) {
   padding-left: 0;
   border-color: #e7e7e7;
 }
 .sv_main
-  input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"]):not([type="checkbox"]):not([type="radio"]):focus {
+  input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"]):not([type="checkbox"]):not([type="radio"]):focus, .sv_main textarea:focus {
   border-color: #000154;
+}
+.sv_main .sv_p_root .sv_q .sv_q_dropdown_control, .sv_main .sv_p_root .sv_q input:not([type=button]):not([type=reset]):not([type=submit]):not([type=image]):not([type=checkbox]):not([type=radio]) {
+  height: 36px;
+}
+.sv_main .sv_q_dropdown__filter-string-input:not([type=button]):not([type=reset]):not([type=submit]):not([type=image]):not([type=checkbox]):not([type=radio]):focus {
+  border: none;
+}
+.sv_main .sv_q_dropdown__filter-string-input:not([type=button]):not([type=reset]):not([type=submit]):not([type=image]):not([type=checkbox]):not([type=radio]) {
+  border: none;
+}
+.sv_main .sv_q_other input:focus {
+  border: none;
 }
 .sv_main .sv_p_root .sv_q .sv_q_dropdown_control {
   padding-left: 0;
